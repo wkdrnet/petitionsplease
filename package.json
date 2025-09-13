@@ -1,5 +1,5 @@
 {
-  "name": "petitionle",
+  "name": "petitionsplease",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,5 +16,8 @@
     "svelte-check": "^4.3.1",
     "typescript": "~5.8.3",
     "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "svelte-spa-router": "^4.0.1"
   }
 }

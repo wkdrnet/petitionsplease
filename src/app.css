@@ -30,6 +30,7 @@ body {
 /* General */
 
 a {
+  color: #005ea5;
   text-decoration-thickness: max(1px, 0.05rem);
   text-underline-offset: 0.1578em;
 }
@@ -98,6 +99,56 @@ h1 .error-message {
   display: block;
   color: #b10e1e;
   font-weight: bold;
+}
+
+h2 {
+  line-height: 1.3157894737;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.current-daily-petition {
+  color: white;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.petition-info {
+  background-color:  #1d70b8;
+  padding-bottom: 4px;
+}
+
+.signature-count .signature-count-progress progress[value]::-moz-progress-bar {
+  background-color: var(--accent_color);
+}
+
+.signature-count .signature-count-progress progress[value] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  height: 10px;
+  width: 100%;
+  border: none;
+}
+
+.signature-count-goal {
+  width: 30%;
+  float: right;
+  text-align: right;
+  color: #6f777b;
+  margin: 15px 0 -15px;
+}
+
+.view-petition {
+  margin: 15px 0 -15px;
+  float: left;
+}
+
+.signature-count-goal::after, .view-petition::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 details {
@@ -193,13 +244,38 @@ details > summary .summary {
   text-decoration: none;
 }
 
+.button-disabled {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 22px;
+  padding: 8px 10px 7px;
+  border: 2px solid transparent;
+  border-radius: 0;
+  color: #fff;
+  background-color: #888888;
+  box-shadow: 0 2px 0 #363636;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .form-label {
   font-size: 19px;
   line-height: 1.3157894737;
   font-weight: 400;
   text-transform: none;
   display: block;
-  color: #0b0c0c;
+  color: #6f777b;
   padding-bottom: 2px;
   margin-bottom: 10px;
 }
@@ -224,6 +300,14 @@ input:focus, textarea:focus, select:focus {
 }
 
 .signature-count {
+  margin: 0px 0px 12px 0px;
+}
+
+.signature-count-number {
+  font-size: 48px;
+}
+
+.signature-guess-field {
   font-size: 27px;
   margin: 0px 0px 12px 0px;
 }
@@ -231,6 +315,10 @@ input:focus, textarea:focus, select:focus {
 .wrapper {
   margin: 0 auto;
   max-width: 630px;
+}
+
+.text {
+  font-size: 27px;
 }
 
 #content {
@@ -278,7 +366,7 @@ input:focus, textarea:focus, select:focus {
   position: absolute;
   left: 0;
   top: 0;
-  width: 26px;
+  width: 32px;
   height: 32px;
   background-image: url(assets/icon.png);
   background-size: contain;
@@ -289,7 +377,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 #header a.proposition:focus::before {
-  width: 26px;
+  width: 32px;
   height: 32px;
   background-image: url(assets/icon_dark.png);
 }
@@ -297,26 +385,4 @@ input:focus, textarea:focus, select:focus {
 #header .header-subtitle {
   color: #fff;
   margin: 10px -5px 5px 50px;
-}
-
-/* Footer Specific */
-
-#footer {
-  border-top: 10px solid var(--accent_color);
-  background-color: #dee0e2;
-  padding-top: 30px;
-  padding-bottom: 45px;
-  display: block;
-}
-
-#footer .ul {
-  margin-bottom: 30px;
-}
-
-#footer li {
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  margin-bottom: 10px;
 }
