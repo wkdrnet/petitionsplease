@@ -131,7 +131,7 @@
         <div class="guess-field">
           <p class="form-label">How many signatures do you think this got?</p>
           <div class="signature-guess-field">
-            <input class="form-control" type="text" pattern="\d*" inputmode="numeric" bind:value={guess}/>
+            <input class="form-control" type="text" inputmode="numeric" maxlength="8" bind:value={guess}/>
             <span class="text">signatures</span>
           </div>
           <button class="button" on:click={submitGuess}>Guess</button>

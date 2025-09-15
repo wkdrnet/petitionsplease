@@ -4,7 +4,7 @@
   import Footer from "./components/Footer.svelte";
   import Normal from "./pages/Normal.svelte";
   import Daily from "./pages/Daily.svelte";
-    import Profile from "./components/Profile.svelte";
+  import Profile from "./components/Profile.svelte";
 
   const routes = {
     "/": Normal,
@@ -14,7 +14,6 @@
 </script>
 
 <Header/>
-<Profile/>
 <Router {routes}/>
 <Footer/>
 
